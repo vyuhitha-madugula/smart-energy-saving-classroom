@@ -1,0 +1,2 @@
+Purpose of the Web Application:
+The purpose of this web application is to demonstrate how electricity can be saved in classrooms by automatically controlling fans and lights. When students are present, the system keeps the appliances ON, and when no students are in the class, it turns them OFF. This model helps schools and colleges reduce unnecessary power usage, lower electricity bills, and promote energy conservation in a simple and effective way.  
