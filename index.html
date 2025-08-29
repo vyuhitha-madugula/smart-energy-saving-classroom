@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Energy Saving Classroom (Basic)</title>
+</head>
+<body>
+  <h2>Energy Saving Classroom</h2>
+
+  <p>
+    <button onclick="addStudent()">Add Student</button>
+    <button onclick="removeStudent()">Remove Student</button>
+  </p>
+
+  <p>Students Present: <span id="count">0</span></p>
+  <p>Lights & Fan: <span id="status">OFF</span></p>
+
+  <script>
+    let count = 0;
+
+    function updateStatus() {
+      document.getElementById('count').textContent = count;
+      document.getElementById('status').textContent = count > 0 ? 'ON' : 'OFF';
+    }
+
+    function addStudent() {
+      count++;
+      updateStatus();
+    }
+
+    function removeStudent() {
+      if(count > 0) count--;
+      updateStatus();
+    }
+
+    updateStatus();
+  </script>
+</body>
+</html>
